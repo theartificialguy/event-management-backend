@@ -4,7 +4,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
 
-import { createHandler } from "graphql-http";
+import { createHandler } from "graphql-http/lib/use/express";
 import { schema } from "./schema/index.js";
 import connectDB from "./config/db.js";
 

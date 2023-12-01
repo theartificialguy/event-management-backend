@@ -5,6 +5,10 @@ import Event from "../../models/event.model.js";
 export const GET_ALL_EVENTS = {
     type: new GraphQLList(EventType),
     async resolve() {
-        return await Event.find({});
+        try {
+            return await Event.find({});
+        } catch (error) {
+            throw new Error("something went wrong");
+        }
     },
 };
