@@ -24,9 +24,10 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  // server health check route
-  res.status(200).send("server online");
-});
+// app.get("/", (req, res) => {
+//   // server health check route
+//   res.status(200).send("server online");
+// });
 
-app.listen(PORT, () => console.log(`server running at PORT:${PORT}`));
+// app.listen(PORT, () => console.log(`server running at PORT:${PORT}`));
+export default app;
